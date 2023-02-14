@@ -43,5 +43,5 @@ async function dbConnect() {
 
   return cached.conn;
 }
-
+// we will export to api product and orders
 export default dbConnect;
