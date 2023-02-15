@@ -1,0 +1,41 @@
+.container{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    flex: 1;
+ 
+    
+
+}
+
+.table{
+    width: 100%;
+    border-spacing: 20px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button:first-child{
+    background-color: teal;
+    margin-right: 10px;
+}
+
+.button:last-child{
+    background-color: crimson;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        flex-direction: column;
+    }
+  }
