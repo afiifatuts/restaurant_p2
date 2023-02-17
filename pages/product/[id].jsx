@@ -109,7 +109,7 @@ const Product = ({pizza}) => {
             <input 
             onChange={handelQtyChange}
             type="number" defaultValue={1} className={styles.quantity}
-            />
+            />π
             
             <button className={styles.button} onClick={handleClick}>Add to Cart</button>
         </div>

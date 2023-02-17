@@ -34,11 +34,6 @@ const Cart = () => {
 
       res.status === 201 && router.push("/orders/"+res.data._id)
       dispatch(reset())
-      // if (res.status === 201) {
-      //   console.log("This is data from axios",res.data);
-      //   // dispatch(reset());
-      //   // router.push(`/orders/${res.data._id}`);
-      // }
     } catch (err) {
       console.log(err);
     }

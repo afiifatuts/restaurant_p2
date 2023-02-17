@@ -22,7 +22,7 @@ export default async function handler(req, res) {
   //handling PUT/edit method
   if (method === "PUT") {
     try {
-      const product = await Product.create(req.body);
+      const product = await Product.findByIdAndUpdate(req.body);
       res.status(201).json();
     } catch (error) {
       console.error("Error while connecting to the database: ", error);
@@ -31,8 +31,8 @@ export default async function handler(req, res) {
   //handling DELETE method
   if (method === "DELETE") {
     try {
-      const product = await Product.create(req.body);
-      res.status(201).json();
+      await Product.findByIdAndDelete(id);
+      res.status(200).json("The product has been deleted");
     } catch (error) {
       console.error("Error while connecting to the database: ", error);
     }
