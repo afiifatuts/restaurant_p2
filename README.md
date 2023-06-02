@@ -1,4 +1,4 @@
-##This is Pizza Ordering App##
+##This is Pizza Ordering App Using Paypal - Inspired by Youtube LamaDev##
 
 -Responsive design ✔️ -We can see Pizza list that fetch our data from mongoDB✔️ -Adding pizza and choosing any size and additional topping to the cart✔️ -We can increase the cart number using react-redux ✔️ -we can see our order in the cart ✔️ -when we click checkout button we can choose payment method Cash on delivery or Paypal -We can see our tracking order ✔️
 
